@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Boilerplate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.boilerplate.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="home">
+    <div id="wrapper">
+      <div class="logo-wrapper">
+        <header class="logo">
+          <h1>Carousel</h1>
+          <h2>Riding carousels with jQuery</h2>
+        </header>
+      </div>
+    	<div class="carousel">
+    		<ul>
+    			<li style="width:748;"><img src="img1.jpg" width="748" height="300"></li>
+          <li style="width:748;"><img src="img2.jpg" width="748" height="300"></li>
+          <li style="width:748;"><img src="img3.jpg" width="748" height="300"></li>
+    		</ul>
+
+    		<a href="#" class="carousel-control-prev" data-jcarouselcontrol="true">&#10094;</a>
+        <a href="#" class="carousel-control-next" data-jcarouselcontrol="true">&#10095;</a>
+        <p class="carousel-pagination" data-jcarouselpagination="true">
+        	<a href="#1" class="active">1</a>
+        	<a href="#2" class="">2</a>
+        	<a href="#3" class="">3</a>
+        </p>
+    	</div>
+      <div class="footer-wrapper">
+        <footer class="footer">
+            <p>Copyright (c) 2006.</p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      $( function() {
+       	$( ".carousel" ).defaultPluginName( {
+       		autoPlay:true,
+        	onComplete: function() {
+		    	}
+       	});
+  		});
+    </script>
+  </body>
+</html>
